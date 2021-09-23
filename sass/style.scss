@@ -1,6 +1,6 @@
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
 /*RESET*/
 *,
@@ -23,9 +23,8 @@ li {
 /*BODY*/
 body {
     font-size: 18px;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Barlow", sans-serif;
 }
-
 
 /*MAIN*/
 main {
@@ -41,14 +40,13 @@ main {
         display: none;
     }
 
-
     li.mobile-image {
         display: none;
     }
 
     .desktop-image-header {
         z-index: -1;
-        background-image: url("./images/desktop/image-header.jpg");
+        background-image: url("../images/desktop/image-header.jpg");
         position: absolute;
         background-size: contain;
         background-repeat: no-repeat;
@@ -85,7 +83,7 @@ header {
         &:last-of-type {
             font-size: 0.9rem;
             font-weight: 700;
-            font-family: 'Fraunces', sans-serif;
+            font-family: "Fraunces", sans-serif;
             text-transform: uppercase;
             border-radius: 30px;
             background-color: hsl(0, 0%, 100%);
@@ -106,7 +104,7 @@ section:first-of-type {
     align-items: center;
     flex-direction: column;
     font-size: 4rem;
-    font-family: 'Fraunces', sans-serif;
+    font-family: "Fraunces", sans-serif;
     margin-top: 100px;
     color: hsl(0, 0%, 100%);
 
@@ -144,7 +142,7 @@ section:last-of-type {
             color: hsl(212, 27%, 19%);
             width: 80%;
             font-size: 4rem;
-            font-family: 'Fraunces', sans-serif;
+            font-family: "Fraunces", sans-serif;
         }
 
         p {
@@ -159,7 +157,7 @@ section:last-of-type {
             position: relative;
             color: hsl(212, 27%, 19%);
             font-weight: 900;
-            font-family: 'Fraunces', sans-serif;
+            font-family: "Fraunces", sans-serif;
             margin-top: 30px;
             text-transform: uppercase;
 
@@ -217,7 +215,7 @@ section:last-of-type {
         }
 
         h2 {
-            font-family: 'Fraunces', sans-serif;
+            font-family: "Fraunces", sans-serif;
             color: hsl(167, 40%, 24%);
             position: absolute;
             bottom: 170px;
@@ -248,7 +246,7 @@ article:first-of-type {
 
     h3 {
         font-size: 2rem;
-        font-family: 'Fraunces', sans-serif;
+        font-family: "Fraunces", sans-serif;
         margin-top: 150px;
         text-transform: uppercase;
         color: hsl(233, 9%, 38%);
@@ -287,7 +285,7 @@ article:first-of-type {
             .name {
                 font-size: 1.5rem;
                 font-weight: 900;
-                font-family: 'Fraunces', sans-serif;
+                font-family: "Fraunces", sans-serif;
                 color: hsl(212, 27%, 19%);
             }
 
@@ -382,7 +380,7 @@ footer {
 
         .mobile-image-header {
             z-index: -1;
-            background-image: url("./images/mobile/image-header.jpg");
+            background-image: url("../images/mobile/image-header.jpg");
             position: absolute;
             background-size: contain;
             background-repeat: no-repeat;
@@ -544,7 +542,6 @@ footer {
                 width: 90%;
             }
         }
-
     }
 
     article:first-of-type {
@@ -572,7 +569,6 @@ footer {
             }
 
             .profile {
-
                 .name {
                     font-size: 1.3rem;
                 }
