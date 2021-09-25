@@ -43,7 +43,7 @@ main li.mobile-image {
 }
 main .desktop-image-header {
   z-index: -1;
-  background-image: url("./images/desktop/image-header.jpg");
+  background-image: url("../images/desktop/image-header.jpg");
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
@@ -88,24 +88,26 @@ header nav a:last-of-type:hover {
   background-color: #6bd0ff;
 }
 
-/*SECTION*/
+/*SECTIONS*/
 section:first-of-type {
   display: flex;
   align-items: center;
   flex-direction: column;
   font-size: 4rem;
   font-family: "Fraunces", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 15px;
   margin-top: 100px;
   color: white;
 }
 section:first-of-type img {
-  width: 7%;
-  margin-top: 150px;
+  width: 6%;
+  margin-top: 100px;
 }
 
 section:last-of-type {
   width: 100%;
-  margin-top: 400px;
+  margin-top: 300px;
 }
 section:last-of-type ul {
   display: grid;
@@ -212,6 +214,7 @@ section:last-of-type li:nth-of-type(6) p {
   color: #19536b;
 }
 
+/*ARTICLES*/
 article:first-of-type {
   width: 80%;
   display: flex;
@@ -219,6 +222,7 @@ article:first-of-type {
   align-items: center;
 }
 article:first-of-type h3 {
+  letter-spacing: 10px;
   font-size: 2rem;
   font-family: "Fraunces", sans-serif;
   margin-top: 150px;
@@ -283,7 +287,7 @@ footer {
 }
 footer img {
   margin-top: 100px;
-  width: 10%;
+  width: 250px;
 }
 footer nav {
   display: flex;
@@ -318,7 +322,7 @@ footer .socialNetwork a:hover .icon {
 /**MOBILE**/
 @media only screen and (min-width: 0) and (max-width: 500px) {
   .desktop-image,
-.desktop-image-header {
+  .desktop-image-header {
     display: none;
   }
 
@@ -328,12 +332,12 @@ footer .socialNetwork a:hover .icon {
     /**DISPLAY MOBILE IMAGE**/
   }
   main .moble-image-header,
-main .mobile-image {
+  main .mobile-image {
     display: inline-block;
   }
   main .mobile-image-header {
     z-index: -1;
-    background-image: url("./images/mobile/image-header.jpg");
+    background-image: url("../images/mobile/image-header.jpg");
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
@@ -413,6 +417,7 @@ main .mobile-image {
     text-align: center;
     font-size: 2rem;
     margin-top: 100px;
+    letter-spacing: 5px;
   }
   section:first-of-type img {
     width: 7%;
@@ -421,7 +426,7 @@ main .mobile-image {
 
   section:last-of-type {
     width: 100%;
-    margin-top: 145px;
+    margin-top: 140px;
   }
   section:last-of-type ul {
     grid-template-columns: 1fr;
@@ -432,30 +437,30 @@ main .mobile-image {
     height: auto;
   }
   section:last-of-type li:nth-of-type(1),
-section:last-of-type li:nth-of-type(4) {
+  section:last-of-type li:nth-of-type(4) {
     align-items: center;
     text-align: center;
     padding-left: 0;
   }
   section:last-of-type li:nth-of-type(1) h2,
-section:last-of-type li:nth-of-type(4) h2 {
+  section:last-of-type li:nth-of-type(4) h2 {
     margin-top: 50px;
     width: 90%;
     font-size: 2.2rem;
   }
   section:last-of-type li:nth-of-type(1) p,
-section:last-of-type li:nth-of-type(4) p {
+  section:last-of-type li:nth-of-type(4) p {
     color: #585a6a;
     margin-top: 40px;
     width: 88%;
   }
   section:last-of-type li:nth-of-type(1) a,
-section:last-of-type li:nth-of-type(4) a {
+  section:last-of-type li:nth-of-type(4) a {
     margin-top: 45px;
     margin-bottom: 70px;
   }
   section:last-of-type li:nth-of-type(1) a:hover span,
-section:last-of-type li:nth-of-type(4) a:hover span {
+  section:last-of-type li:nth-of-type(4) a:hover span {
     background-color: #fad400;
   }
   section:last-of-type li:nth-of-type(4) {
@@ -468,15 +473,16 @@ section:last-of-type li:nth-of-type(4) a:hover span {
     width: 90%;
   }
   section:last-of-type li:nth-of-type(5) h2,
-section:last-of-type li:nth-of-type(6) h2 {
+  section:last-of-type li:nth-of-type(6) h2 {
     bottom: 190px;
   }
   section:last-of-type li:nth-of-type(5) p,
-section:last-of-type li:nth-of-type(6) p {
+  section:last-of-type li:nth-of-type(6) p {
     bottom: 60px;
     width: 90%;
   }
 
+  /*ARTICLES*/
   article:first-of-type {
     width: 90%;
   }
@@ -546,6 +552,291 @@ section:last-of-type li:nth-of-type(6) p {
   }
   footer .socialNetwork a {
     padding: 15px;
+  }
+}
+/*TABLETS*/
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+  /*HEADER*/
+  header .mobile-menu .logo {
+    width: 150px;
+  }
+  header nav a {
+    padding: 9px 21px;
+  }
+
+  /*SECTIONS*/
+  section:first-of-type {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-top: 50px;
+  }
+  section:first-of-type img {
+    width: 5%;
+    margin-top: 30px;
+  }
+
+  section:last-of-type {
+    margin-top: 160px;
+  }
+  section:last-of-type li:nth-of-type(1),
+  section:last-of-type li:nth-of-type(4) {
+    padding-left: 15%;
+  }
+  section:last-of-type li:nth-of-type(1) h2,
+  section:last-of-type li:nth-of-type(4) h2 {
+    width: 85%;
+    font-size: 1.6rem;
+  }
+  section:last-of-type li:nth-of-type(1) p,
+  section:last-of-type li:nth-of-type(4) p {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    width: 85%;
+  }
+  section:last-of-type li:nth-of-type(1) a,
+  section:last-of-type li:nth-of-type(4) a {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  section:last-of-type li:nth-of-type(1) a span,
+  section:last-of-type li:nth-of-type(4) a span {
+    height: 7px;
+  }
+  section:last-of-type li:nth-of-type(4) {
+    padding-left: 10%;
+  }
+  section:last-of-type li:nth-of-type(4) h2 {
+    font-size: 1.2rem;
+  }
+  section:last-of-type li:nth-of-type(4) p {
+    width: 85%;
+  }
+  section:last-of-type li:nth-of-type(5) h2,
+  section:last-of-type li:nth-of-type(6) h2 {
+    bottom: 100px;
+  }
+  section:last-of-type li:nth-of-type(5) p,
+  section:last-of-type li:nth-of-type(6) p {
+    font-size: 1rem;
+    bottom: 15px;
+    width: 80%;
+  }
+  section:last-of-type li:nth-of-type(6) p {
+    width: 70%;
+  }
+
+  /*ARTICLES*/
+  article:first-of-type {
+    width: 95%;
+  }
+  article:first-of-type h3 {
+    letter-spacing: 5px;
+    font-size: 1.3rem;
+    margin-top: 100px;
+  }
+  article:first-of-type li {
+    margin-top: 70px;
+    height: 270px;
+  }
+  article:first-of-type li p {
+    font-size: 1rem;
+    width: 90%;
+  }
+  article:first-of-type li .profile .name {
+    font-size: 1rem;
+  }
+  article:first-of-type li .profile .job {
+    font-size: 0.8rem;
+  }
+
+  article:last-of-type .desktop-image {
+    margin-top: 100px;
+  }
+
+  /*FOOTER*/
+  footer img {
+    margin-top: 70px;
+    width: 150px;
+  }
+  footer nav {
+    display: flex;
+    margin-top: 25px;
+  }
+  footer nav a {
+    padding: 20px;
+  }
+  footer .socialNetwork {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  footer .socialNetwork a {
+    padding: 10px;
+  }
+}
+/*LAPTOP*/
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+  /*SECTIONS*/
+  section:first-of-type {
+    font-size: 2rem;
+    letter-spacing: 12px;
+  }
+  section:first-of-type img {
+    width: 6%;
+    margin-top: 70px;
+  }
+
+  section:last-of-type {
+    width: 100%;
+    margin-top: 260px;
+  }
+  section:last-of-type li:nth-of-type(1),
+  section:last-of-type li:nth-of-type(4) {
+    padding-left: 18%;
+  }
+  section:last-of-type li:nth-of-type(1) h2,
+  section:last-of-type li:nth-of-type(4) h2 {
+    font-size: 3rem;
+  }
+  section:last-of-type li:nth-of-type(1) p,
+  section:last-of-type li:nth-of-type(4) p {
+    width: 80%;
+  }
+  section:last-of-type li:nth-of-type(4) {
+    padding-left: 15%;
+  }
+  section:last-of-type li:nth-of-type(4) h2 {
+    font-size: 2rem;
+  }
+  section:last-of-type li:nth-of-type(4) p {
+    width: 85%;
+  }
+  section:last-of-type li:nth-of-type(5) h2,
+  section:last-of-type li:nth-of-type(6) h2 {
+    bottom: 150px;
+  }
+  section:last-of-type li:nth-of-type(5) p,
+  section:last-of-type li:nth-of-type(6) p {
+    bottom: 50px;
+    width: 70%;
+  }
+  section:last-of-type li:nth-of-type(6) p {
+    width: 60%;
+  }
+
+  /*ARTICLES*/
+  article:first-of-type {
+    width: 90%;
+  }
+  article:first-of-type h3 {
+    letter-spacing: 8px;
+    font-size: 1.5rem;
+    margin-top: 100px;
+  }
+  article:first-of-type li {
+    margin-top: 100px;
+    height: 300px;
+  }
+  article:first-of-type li p {
+    width: 90%;
+  }
+  article:first-of-type li .profile .name {
+    font-size: 1.2rem;
+  }
+  article:first-of-type li .profile .job {
+    font-size: 0.9rem;
+  }
+
+  article:last-of-type .desktop-image {
+    margin-top: 100px;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #458c7e;
+  }
+  footer img {
+    width: 170px;
+  }
+  footer nav {
+    margin-top: 20px;
+  }
+  footer .socialNetwork {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  footer .socialNetwork a {
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 1367px) and (max-width: 1440px) {
+  /*SECTIONS*/
+  section:first-of-type {
+    font-size: 2rem;
+  }
+  section:first-of-type img {
+    margin-top: 100px;
+  }
+
+  section:last-of-type {
+    width: 100%;
+    margin-top: 280px;
+  }
+  section:last-of-type li:nth-of-type(1) h2,
+  section:last-of-type li:nth-of-type(4) h2 {
+    width: 90%;
+    font-size: 3.5rem;
+  }
+  section:last-of-type li:nth-of-type(1) p,
+  section:last-of-type li:nth-of-type(4) p {
+    width: 80%;
+  }
+  section:last-of-type li:nth-of-type(4) h2 {
+    font-size: 3rem;
+  }
+  section:last-of-type li:nth-of-type(4) p {
+    width: 80%;
+  }
+  section:last-of-type li:nth-of-type(5) h2,
+  section:last-of-type li:nth-of-type(6) h2 {
+    bottom: 160px;
+  }
+  section:last-of-type li:nth-of-type(5) p,
+  section:last-of-type li:nth-of-type(6) p {
+    bottom: 60px;
+    width: 55%;
+  }
+
+  /*ARTICLES*/
+  article:first-of-type h3 {
+    font-size: 1.8rem;
+    margin-top: 120px;
+  }
+  article:first-of-type li {
+    height: 350px;
+  }
+  article:first-of-type li p {
+    width: 90%;
+  }
+  article:first-of-type li .profile .name {
+    font-size: 1.2rem;
+  }
+  article:first-of-type li .profile .job {
+    font-size: 0.9rem;
+  }
+
+  article:last-of-type .desktop-image {
+    margin-top: 100px;
+  }
+
+  footer img {
+    margin-top: 100px;
+    width: 200px;
+  }
+  footer .socialNetwork {
+    margin-top: 100px;
   }
 }
 

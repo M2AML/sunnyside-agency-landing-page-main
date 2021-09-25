@@ -98,25 +98,27 @@ header {
     }
 }
 
-/*SECTION*/
+/*SECTIONS*/
 section:first-of-type {
     display: flex;
     align-items: center;
     flex-direction: column;
     font-size: 4rem;
     font-family: "Fraunces", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 15px;
     margin-top: 100px;
     color: hsl(0, 0%, 100%);
 
     img {
-        width: 7%;
-        margin-top: 150px;
+        width: 6%;
+        margin-top: 100px;
     }
 }
 
 section:last-of-type {
     width: 100%;
-    margin-top: 400px;
+    margin-top: 300px;
 
     ul {
         display: grid;
@@ -238,6 +240,7 @@ section:last-of-type {
     }
 }
 
+/*ARTICLES*/
 article:first-of-type {
     width: 80%;
     display: flex;
@@ -245,6 +248,7 @@ article:first-of-type {
     align-items: center;
 
     h3 {
+        letter-spacing: 10px;
         font-size: 2rem;
         font-family: "Fraunces", sans-serif;
         margin-top: 150px;
@@ -320,7 +324,7 @@ footer {
 
     img {
         margin-top: 100px;
-        width: 10%;
+        width: 250px;
     }
 
     nav {
@@ -470,6 +474,7 @@ footer {
         text-align: center;
         font-size: 2rem;
         margin-top: 100px;
+        letter-spacing: 5px;
 
         img {
             width: 7%;
@@ -544,6 +549,7 @@ footer {
         }
     }
 
+    /*ARTICLES*/
     article:first-of-type {
         width: 90%;
 
@@ -628,6 +634,374 @@ footer {
             a {
                 padding: 15px;
             }
+        }
+    }
+}
+
+/*TABLETS*/
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
+
+    /*HEADER*/
+    header {
+        .mobile-menu .logo {
+            width: 150px;
+        }
+
+        nav a {
+            padding: 9px 21px;
+        }
+    }
+
+    /*SECTIONS*/
+    section:first-of-type {
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+        margin-top: 50px;
+
+        img {
+            width: 5%;
+            margin-top: 30px;
+        }
+    }
+
+    section:last-of-type {
+        margin-top: 160px;
+
+        li:nth-of-type(1),
+        li:nth-of-type(4) {
+            padding-left: 15%;
+
+            h2 {
+                width: 85%;
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+                margin-top: 20px;
+                width: 85%;
+            }
+
+            a {
+                margin-top: 20px;
+                font-size: 1rem;
+
+                span {
+                    height: 7px;
+                }
+            }
+        }
+
+        li:nth-of-type(4) {
+            padding-left: 10%;
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                width: 85%;
+            }
+        }
+
+        li:nth-of-type(5),
+        li:nth-of-type(6) {
+            h2 {
+                bottom: 100px;
+            }
+
+            p {
+                font-size: 1rem;
+                bottom: 15px;
+                width: 80%;
+            }
+        }
+
+        li:nth-of-type(6) {
+            p {
+                width: 70%;
+            }
+        }
+    }
+
+    /*ARTICLES*/
+    article:first-of-type {
+        width: 95%;
+
+        h3 {
+            letter-spacing: 5px;
+            font-size: 1.3rem;
+            margin-top: 100px;
+        }
+
+        li {
+            margin-top: 70px;
+            height: 270px;
+
+            p {
+                font-size: 1rem;
+                width: 90%;
+            }
+
+            .profile {
+                .name {
+                    font-size: 1rem;
+                }
+
+                .job {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    article:last-of-type {
+        .desktop-image {
+            margin-top: 100px;
+        }
+    }
+
+    /*FOOTER*/
+    footer {
+        img {
+            margin-top: 70px;
+            width: 150px;
+        }
+
+        nav {
+            display: flex;
+            margin-top: 25px;
+
+            a {
+                padding: 20px;
+            }
+        }
+
+        .socialNetwork {
+            margin-top: 50px;
+            margin-bottom: 30px;
+
+            a {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+/*LAPTOP*/
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+
+    /*SECTIONS*/
+    section:first-of-type {
+        font-size: 2rem;
+        letter-spacing: 12px;
+
+        img {
+            width: 6%;
+            margin-top: 70px;
+        }
+    }
+
+    section:last-of-type {
+        width: 100%;
+        margin-top: 260px;
+
+        li:nth-of-type(1),
+        li:nth-of-type(4) {
+            padding-left: 18%;
+
+            h2 {
+                font-size: 3rem;
+            }
+
+            p {
+                width: 80%;
+            }
+        }
+
+        li:nth-of-type(4) {
+            padding-left: 15%;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                width: 85%;
+            }
+        }
+
+        li:nth-of-type(5),
+        li:nth-of-type(6) {
+            h2 {
+                bottom: 150px;
+            }
+
+            p {
+                bottom: 50px;
+                width: 70%;
+            }
+        }
+
+        li:nth-of-type(6) {
+            p {
+                width: 60%;
+            }
+        }
+    }
+
+    /*ARTICLES*/
+    article:first-of-type {
+        width: 90%;
+
+        h3 {
+            letter-spacing: 8px;
+            font-size: 1.5rem;
+            margin-top: 100px;
+        }
+
+        li {
+            margin-top: 100px;
+            height: 300px;
+
+            p {
+                width: 90%;
+            }
+
+            .profile {
+                .name {
+                    font-size: 1.2rem;
+                }
+
+                .job {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    article:last-of-type {
+        .desktop-image {
+            margin-top: 100px;
+        }
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: hsl(168, 34%, 41%);
+
+        img {
+            width: 170px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        .socialNetwork {
+            margin-top: 100px;
+            margin-bottom: 40px;
+
+            a {
+                padding: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1367px) and (max-width: 1440px) {
+
+    /*SECTIONS*/
+    section:first-of-type {
+        font-size: 2rem;
+
+        img {
+            margin-top: 100px;
+        }
+    }
+
+    section:last-of-type {
+        width: 100%;
+        margin-top: 280px;
+
+        li:nth-of-type(1),
+        li:nth-of-type(4) {
+            h2 {
+                width: 90%;
+                font-size: 3.5rem;
+            }
+
+            p {
+                width: 80%;
+            }
+        }
+
+        li:nth-of-type(4) {
+            h2 {
+                font-size: 3rem;
+            }
+
+            p {
+                width: 80%;
+            }
+        }
+
+        li:nth-of-type(5),
+        li:nth-of-type(6) {
+            h2 {
+                bottom: 160px;
+            }
+
+            p {
+                bottom: 60px;
+                width: 55%;
+            }
+        }
+    }
+
+    /*ARTICLES*/
+    article:first-of-type {
+        h3 {
+            font-size: 1.8rem;
+            margin-top: 120px;
+        }
+
+        li {
+            height: 350px;
+
+            p {
+                width: 90%;
+            }
+
+            .profile {
+                .name {
+                    font-size: 1.2rem;
+                }
+
+                .job {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    article:last-of-type {
+        .desktop-image {
+            margin-top: 100px;
+        }
+    }
+
+    footer {
+        img {
+            margin-top: 100px;
+            width: 200px;
+        }
+
+        .socialNetwork {
+            margin-top: 100px;
         }
     }
 }
