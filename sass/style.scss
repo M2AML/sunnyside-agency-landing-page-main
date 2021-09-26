@@ -361,6 +361,19 @@ footer {
             }
         }
     }
+
+    p.attribution {
+        margin-bottom: 20px;
+
+        a {
+            color: hsl(167, 40%, 24%);
+            transition: all 0.3s;
+        }
+
+        a:hover {
+            color: hsl(0, 0%, 100%);
+        }
+    }
 }
 
 /*RESPONSIVE*/

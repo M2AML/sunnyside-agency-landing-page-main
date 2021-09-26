@@ -317,12 +317,22 @@ footer .socialNetwork a .icon {
 footer .socialNetwork a:hover .icon {
   fill: white;
 }
+footer p.attribution {
+  margin-bottom: 20px;
+}
+footer p.attribution a {
+  color: #25564b;
+  transition: all 0.3s;
+}
+footer p.attribution a:hover {
+  color: white;
+}
 
 /*RESPONSIVE*/
 /**MOBILE**/
 @media only screen and (min-width: 0) and (max-width: 500px) {
   .desktop-image,
-  .desktop-image-header {
+.desktop-image-header {
     display: none;
   }
 
@@ -332,7 +342,7 @@ footer .socialNetwork a:hover .icon {
     /**DISPLAY MOBILE IMAGE**/
   }
   main .moble-image-header,
-  main .mobile-image {
+main .mobile-image {
     display: inline-block;
   }
   main .mobile-image-header {
@@ -437,30 +447,30 @@ footer .socialNetwork a:hover .icon {
     height: auto;
   }
   section:last-of-type li:nth-of-type(1),
-  section:last-of-type li:nth-of-type(4) {
+section:last-of-type li:nth-of-type(4) {
     align-items: center;
     text-align: center;
     padding-left: 0;
   }
   section:last-of-type li:nth-of-type(1) h2,
-  section:last-of-type li:nth-of-type(4) h2 {
+section:last-of-type li:nth-of-type(4) h2 {
     margin-top: 50px;
     width: 90%;
     font-size: 2.2rem;
   }
   section:last-of-type li:nth-of-type(1) p,
-  section:last-of-type li:nth-of-type(4) p {
+section:last-of-type li:nth-of-type(4) p {
     color: #585a6a;
     margin-top: 40px;
     width: 88%;
   }
   section:last-of-type li:nth-of-type(1) a,
-  section:last-of-type li:nth-of-type(4) a {
+section:last-of-type li:nth-of-type(4) a {
     margin-top: 45px;
     margin-bottom: 70px;
   }
   section:last-of-type li:nth-of-type(1) a:hover span,
-  section:last-of-type li:nth-of-type(4) a:hover span {
+section:last-of-type li:nth-of-type(4) a:hover span {
     background-color: #fad400;
   }
   section:last-of-type li:nth-of-type(4) {
@@ -473,11 +483,11 @@ footer .socialNetwork a:hover .icon {
     width: 90%;
   }
   section:last-of-type li:nth-of-type(5) h2,
-  section:last-of-type li:nth-of-type(6) h2 {
+section:last-of-type li:nth-of-type(6) h2 {
     bottom: 190px;
   }
   section:last-of-type li:nth-of-type(5) p,
-  section:last-of-type li:nth-of-type(6) p {
+section:last-of-type li:nth-of-type(6) p {
     bottom: 60px;
     width: 90%;
   }
@@ -579,27 +589,27 @@ footer .socialNetwork a:hover .icon {
     margin-top: 160px;
   }
   section:last-of-type li:nth-of-type(1),
-  section:last-of-type li:nth-of-type(4) {
+section:last-of-type li:nth-of-type(4) {
     padding-left: 15%;
   }
   section:last-of-type li:nth-of-type(1) h2,
-  section:last-of-type li:nth-of-type(4) h2 {
+section:last-of-type li:nth-of-type(4) h2 {
     width: 85%;
     font-size: 1.6rem;
   }
   section:last-of-type li:nth-of-type(1) p,
-  section:last-of-type li:nth-of-type(4) p {
+section:last-of-type li:nth-of-type(4) p {
     font-size: 0.9rem;
     margin-top: 20px;
     width: 85%;
   }
   section:last-of-type li:nth-of-type(1) a,
-  section:last-of-type li:nth-of-type(4) a {
+section:last-of-type li:nth-of-type(4) a {
     margin-top: 20px;
     font-size: 1rem;
   }
   section:last-of-type li:nth-of-type(1) a span,
-  section:last-of-type li:nth-of-type(4) a span {
+section:last-of-type li:nth-of-type(4) a span {
     height: 7px;
   }
   section:last-of-type li:nth-of-type(4) {
@@ -612,11 +622,11 @@ footer .socialNetwork a:hover .icon {
     width: 85%;
   }
   section:last-of-type li:nth-of-type(5) h2,
-  section:last-of-type li:nth-of-type(6) h2 {
+section:last-of-type li:nth-of-type(6) h2 {
     bottom: 100px;
   }
   section:last-of-type li:nth-of-type(5) p,
-  section:last-of-type li:nth-of-type(6) p {
+section:last-of-type li:nth-of-type(6) p {
     font-size: 1rem;
     bottom: 15px;
     width: 80%;
@@ -690,15 +700,15 @@ footer .socialNetwork a:hover .icon {
     margin-top: 260px;
   }
   section:last-of-type li:nth-of-type(1),
-  section:last-of-type li:nth-of-type(4) {
+section:last-of-type li:nth-of-type(4) {
     padding-left: 18%;
   }
   section:last-of-type li:nth-of-type(1) h2,
-  section:last-of-type li:nth-of-type(4) h2 {
+section:last-of-type li:nth-of-type(4) h2 {
     font-size: 3rem;
   }
   section:last-of-type li:nth-of-type(1) p,
-  section:last-of-type li:nth-of-type(4) p {
+section:last-of-type li:nth-of-type(4) p {
     width: 80%;
   }
   section:last-of-type li:nth-of-type(4) {
@@ -711,11 +721,11 @@ footer .socialNetwork a:hover .icon {
     width: 85%;
   }
   section:last-of-type li:nth-of-type(5) h2,
-  section:last-of-type li:nth-of-type(6) h2 {
+section:last-of-type li:nth-of-type(6) h2 {
     bottom: 150px;
   }
   section:last-of-type li:nth-of-type(5) p,
-  section:last-of-type li:nth-of-type(6) p {
+section:last-of-type li:nth-of-type(6) p {
     bottom: 50px;
     width: 70%;
   }
@@ -785,12 +795,12 @@ footer .socialNetwork a:hover .icon {
     margin-top: 280px;
   }
   section:last-of-type li:nth-of-type(1) h2,
-  section:last-of-type li:nth-of-type(4) h2 {
+section:last-of-type li:nth-of-type(4) h2 {
     width: 90%;
     font-size: 3.5rem;
   }
   section:last-of-type li:nth-of-type(1) p,
-  section:last-of-type li:nth-of-type(4) p {
+section:last-of-type li:nth-of-type(4) p {
     width: 80%;
   }
   section:last-of-type li:nth-of-type(4) h2 {
@@ -800,11 +810,11 @@ footer .socialNetwork a:hover .icon {
     width: 80%;
   }
   section:last-of-type li:nth-of-type(5) h2,
-  section:last-of-type li:nth-of-type(6) h2 {
+section:last-of-type li:nth-of-type(6) h2 {
     bottom: 160px;
   }
   section:last-of-type li:nth-of-type(5) p,
-  section:last-of-type li:nth-of-type(6) p {
+section:last-of-type li:nth-of-type(6) p {
     bottom: 60px;
     width: 55%;
   }
